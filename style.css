@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1.5 ease-in;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+li, a, button {
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration : none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(21, 4, 11, 0.8);
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    height: 4vh;
+    width: 10%;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgba(255, 57, 0, 0.8);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(78, 81, 82);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    
+}
+
+button:hover {
+    background-color: rgba(255, 57, 0, 0.8);
+}
+
+.img-fixed {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+
+
+/* Section Style css */
+
+
+.container {
+    color: #edf0f1;
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .info {
+    margin-top: 20%;
+}
+
+.container .info h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container .info h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container .info p{
+    font-size: 1.2rem;
+    max-width: 60%;
+}
+
+.container .info a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(78, 81, 82);
+    border-radius: 50px;
+    font-size: 1.8rem;
+    font-size: 1.8rem;
+    padding: 0.5em 2em;
+    margin-top: 1.5rem;
+    color: #edf0f1;
+    transition: all 0.8s ease 0s;
+
+}
+
+.container .info a:hover{
+    background-color: rgba(255, 57, 0, 0.8);
+}
+
+
+
+@media (max-width: 800px) { 
+
+    html {
+        font-size: 14px;
+    }
+    body {
+        background-image: url(./img/background/squid-game-3b.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 50px 10%;
+    }
+
+    .nav__links li {
+        display: inline-block;
+        padding: 0px 4rem;
+    }
+
+    .logo img {
+        width: 70% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 70%;
+    }
+    
+    }
+    
+    @media (max-width:345px) { 
+    .logo img {
+        width: 65% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 65%;
+    }
+    }
+    
+    @media (max-width:335px) { 
+    .logo img {
+        width: 60% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 60%;
+    }
+    }
+    
+    @media (max-width:325px) { 
+    .logo img {
+        width: 55% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 55%;
+    }
+    }
+    
+    @media (max-width:315px) { 
+    .logo img {
+        width: 50% \9; /*Force IE10 and below to size SVG images correctly*/
+        max-width: 50%;
+    }
+    }
+
+    @media (max-width: 675px) {
+       .logo img {  
+        border: 1px solid blue;
+        }
+    }
+
+    @media (max-width: 460px) {
+        .nav__links {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+        };
+    }
